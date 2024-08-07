@@ -1,4 +1,4 @@
-import { tambah, kurang } from './latihan.js';
+import { add, subtract } from './no5.js';
 
-console.log(tambah(5, 3)); // Output: 8
-console.log(kurang(5, 3)); // Output: 2
+console.log(add(5, 3)); 
+console.log(subtract(5, 3)); 

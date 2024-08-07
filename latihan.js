@@ -19,7 +19,12 @@ const pengguna = {orang : "Rofi" , umur : 30};
 const {orang , umur} = pengguna
 console.log(orang,umur) ;
 
-// no 4 
+// no 4
+const name = "Alice";
+const greeting = `Hello, ${name}!`;
+console.log(greeting); // Output: Hello, Alice!
+
+// no 5
 const angka1 = [2, 3];
 const angka2 = [...angka1, 4, 5];
 console.log(angka2); // Output: [1, 2, 3, 4]
@@ -34,6 +39,3 @@ function hitung(...angka) {
 }
 console.log(hitung(3, 2, 3, 4)); 
 
-// no 5
-export const tambah = (x, y) => x + y;
-export const kurang = (x, y) => x - y;
