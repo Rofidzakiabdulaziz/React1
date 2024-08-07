@@ -27,9 +27,13 @@ console.log(angka2); // Output: [1, 2, 3, 4]
 
 const user1 = { nama: "Rofi", umur: 17 };
 const user2 = { ...user1, kelas: "XII" };
-console.log(user2); // Output: { nama: "Mirza", umur: 30, pekerjaan: "Guru" }
+console.log(user2); 
 
 function hitung(...angka) {
   return angka.reduce((acc, curr) => acc + curr, 0);
 }
-console.log(hitung(3, 2, 3, 4)); // Output: 10
+console.log(hitung(3, 2, 3, 4)); 
+
+// no 5
+export const tambah = (x, y) => x + y;
+export const kurang = (x, y) => x - y;
