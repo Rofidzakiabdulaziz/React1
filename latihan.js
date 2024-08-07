@@ -39,3 +39,57 @@ function hitung(...angka) {
 }
 console.log(hitung(3, 2, 3, 4)); 
 
+// no 7
+
+const AmbilData = () => {
+  return new Promise((resolve, reject) => {
+    setTimeout(() => {
+      resolve("Data lu udah diambil bos");
+    }, 2000);
+  });
+};
+
+AmbilData().then(response => console.log(response));
+
+
+const fetchData = async () => {
+  try {
+    const response = await AmbilData();
+    console.log(response);
+  } catch (error) {
+    console.error(error);
+  }
+};
+
+fetchData(); 
+
+// no 8 
+
+ class Person {
+  constructor(nama, umur) {
+    this.nama = nama;
+    this.umur = umur;
+  }
+
+  perkenalan() {
+    return `Halo, nama saya ${this.nama} dan saya berumur ${this.umur} tahun.`;
+  }
+}
+
+const rofi = new Person("rofi", 17);
+console.log(rofi.perkenalan()); 
+// Inheritance
+class Murid extends Person {
+  constructor(nama, umur, mataPelajaran) {
+    super(nama, umur);
+    this.mataPelajaran = mataPelajaran;
+  }
+
+  belajar() {
+    return `Saya Belajar ${this.mataPelajaran}.`;
+  }
+}
+
+const Rofiganteng = new Murid("Rofi", 17, "React JS");
+console.log(Rofiganteng.perkenalan()); 
+console.log(Rofiganteng.belajar());  
